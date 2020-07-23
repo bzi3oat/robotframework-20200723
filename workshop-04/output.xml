@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.5 on win32)" generated="20200723 16:00:47.307" rpa="false">
+<suite id="s1" name="Google" source="C:\robot\google.robot">
+<test id="s1-t1" name="เปิด Google Chrome">
+<kw name="เปิด Browser และเข้า link">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://www.google.co.th</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200723 16:00:47.790" level="INFO">Opening browser 'chrome' to base url 'http://www.google.co.th'.</msg>
+<status status="PASS" starttime="20200723 16:00:47.790" endtime="20200723 16:00:54.255"></status>
+</kw>
+<status status="PASS" starttime="20200723 16:00:47.788" endtime="20200723 16:00:54.256"></status>
+</kw>
+<kw name="กรอกสิ่งที่ต้องการค้นหา">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>q</arg>
+<arg>เทสๆๆๆๆ</arg>
+</arguments>
+<msg timestamp="20200723 16:00:54.258" level="INFO">Typing text 'เทสๆๆๆๆ' into text field 'q'.</msg>
+<status status="PASS" starttime="20200723 16:00:54.257" endtime="20200723 16:00:54.613"></status>
+</kw>
+<status status="PASS" starttime="20200723 16:00:54.256" endtime="20200723 16:00:54.614"></status>
+</kw>
+<kw name="กด ENTER เพื่อค้นหา">
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>q</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20200723 16:00:54.615" level="INFO">Sending key(s) ('ENTER',) to q element.</msg>
+<msg timestamp="20200723 16:00:54.944" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20200723 16:00:54.944" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20200723 16:00:54.615" endtime="20200723 16:00:57.316"></status>
+</kw>
+<status status="PASS" starttime="20200723 16:00:54.614" endtime="20200723 16:00:57.317"></status>
+</kw>
+<kw name="เข้าไปลิงค์ที่ต้องการ">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>https://dict.longdo.com/?search=Test</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20200723 16:00:57.319" level="INFO">Clicking ['link', 'link'] 'https://dict.longdo.com/?search=Test' with ENTER.</msg>
+<status status="PASS" starttime="20200723 16:00:57.318" endtime="20200723 16:01:01.139"></status>
+</kw>
+<status status="PASS" starttime="20200723 16:00:57.318" endtime="20200723 16:01:01.139"></status>
+</kw>
+<status status="PASS" starttime="20200723 16:00:47.788" endtime="20200723 16:01:01.140" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200723 16:00:47.317" endtime="20200723 16:01:01.148"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Google">Google</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
