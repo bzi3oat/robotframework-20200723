@@ -1,0 +1,12 @@
+*** Settings ***
+Library     SeleniumLibrary
+
+*** Test Cases ***
+เปิด Google Chrome
+    เปิดๆๆๆๆ
+    กรอกๆๆๆๆ   
+    
+*** Keywords ***
+เปิดๆๆๆๆ         Open Browser    http://www.google.co.th     chrome
+กรอกๆๆๆๆ        Input Text      q                           เทสๆๆๆๆ
+             
